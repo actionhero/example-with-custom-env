@@ -1,5 +1,7 @@
 # example-with-custom-env
 
+![Node.js CI](https://github.com/actionhero/example-with-custom-env/workflows/Node.js%20CI/badge.svg)
+
 This repository contains an Actionhero example showcasing how to modify the environment at runtime and integrate with the config system. Specifically, we focus on needing to rely on an `async` method to determine what these changes to `process.env` should be. Perhaps you need to load the config from an API or read them from the file system.
 
 ## config/hero.ts and initializers/hero.ts
