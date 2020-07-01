@@ -17,7 +17,9 @@ export const DEFAULT = {
     };
   },
 };
+```
 
+```ts
 // initializers/hero.ts
 import { Initializer, config, log } from "actionhero";
 
@@ -38,6 +40,7 @@ export class MyInitializer extends Initializer {
 This is our example method that will modify `process.env` within an async function.
 
 ```ts
+// modules/asyncConfig
 import * as path from "path";
 
 // I modify process.env from an .env file, and I'm async
