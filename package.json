@@ -7,7 +7,7 @@
     "node": ">=8.0.0"
   },
   "dependencies": {
-    "actionhero": "27.0.3",
+    "actionhero": "27.1.4",
     "dotenv": "^10.0.0",
     "ioredis": "latest",
     "winston": "latest",
