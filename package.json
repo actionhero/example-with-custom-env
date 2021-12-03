@@ -7,7 +7,7 @@
     "node": ">=8.0.0"
   },
   "dependencies": {
-    "actionhero": "27.2.0",
+    "actionhero": "28.0.1",
     "dotenv": "^10.0.0",
     "ioredis": "^4.28.0",
     "winston": "^3.3.3",
@@ -27,7 +27,6 @@
     "dev": "ts-node-dev --no-deps --transpile-only ./src/server",
     "debug": "tsc && ts-node-dev --transpile-only --no-deps --inspect -- ./src/server ",
     "start": "node ./dist/server.js",
-    "actionhero": "actionhero",
     "test": "jest",
     "pretest": "npm run build && npm run lint",
     "build": "tsc --sourceMap false --declaration",
