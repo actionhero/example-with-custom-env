@@ -9,7 +9,7 @@
   "dependencies": {
     "actionhero": "27.2.0",
     "dotenv": "^10.0.0",
-    "ioredis": "^4.28.0",
+    "ioredis": "^4.28.2",
     "winston": "^3.3.3",
     "ws": "^8.2.3"
   },
