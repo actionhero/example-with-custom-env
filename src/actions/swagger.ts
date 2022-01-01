@@ -28,12 +28,9 @@ const responses = {
 };
 
 export class Swagger extends Action {
-  constructor() {
-    super();
-    this.name = "swagger";
-    this.description = "return API documentation in the OpenAPI specification";
-    this.outputExample = {};
-  }
+  name = "swagger";
+  description = "return API documentation in the OpenAPI specification";
+  outputExample = {};
 
   getLatestAction(route: RouteType) {
     let matchedAction: Action;
@@ -79,11 +76,7 @@ export class Swagger extends Action {
         const tag = action.name.split(":")[0];
         const formattedPath = route.path
           .replace("/v:apiVersion", "")
-          .replace(/\/:(\w*)/, "/{$1}")
-          .replace(/\/:(\w*)/, "/{$1}")
-          .replace(/\/:(\w*)/, "/{$1}")
-          .replace(/\/:(\w*)/, "/{$1}")
-          .replace(/\/:(\w*)/, "/{$1}");
+          .replace(/\/:(\w*)/g, "/{$1}");
 
         swaggerPaths[formattedPath] = swaggerPaths[formattedPath] || {};
         swaggerPaths[formattedPath][method] = {
