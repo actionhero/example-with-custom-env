@@ -1,18 +1,15 @@
-import { chatRoom, Action } from "actionhero";
+import { chatRoom, Action, ParamsFrom } from "actionhero";
 
 export class CreateChatRoom extends Action {
-  constructor() {
-    super();
-    this.name = "createChatRoom";
-    this.description = "I will create a chatroom with the given name";
-    this.inputs = {
-      name: {
-        required: true,
-      },
-    };
-  }
+  name = "createChatRoom";
+  description = "I will create a chatroom with the given name";
+  inputs = {
+    name: {
+      required: true,
+    },
+  };
 
-  async run({ params }: { params: { name: string } }) {
+  async run({ params }: { params: ParamsFrom<CreateChatRoom> }) {
     let didCreate = false;
 
     if (!(await chatRoom.exists(params.name))) {
