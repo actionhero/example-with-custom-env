@@ -7,7 +7,7 @@
     "node": ">=8.0.0"
   },
   "dependencies": {
-    "@types/glob": "^8.0.0",
+    "@types/glob": "^8.0.1",
     "actionhero": "28.3.0",
     "dotenv": "^16.0.3",
     "ioredis": "^5.3.0",
