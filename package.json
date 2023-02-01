@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@types/glob": "^8.0.0",
-    "actionhero": "28.2.2",
+    "actionhero": "28.3.0",
     "dotenv": "^16.0.3",
     "ioredis": "^5.2.4",
     "winston": "^3.8.2",
